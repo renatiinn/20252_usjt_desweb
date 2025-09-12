@@ -1,34 +1,56 @@
+import Pedido from "./Pedido"
+import Hippo from "./Hippo"
+import Cartao from "./Cartao"
+
 const App = () => {
   return (
     <div className="container">
       <div className="row">
         <div className="col-12">
-          <i className="fa-hippo fa-2x fa-solid"></i>
+          <Cartao
+          cabecalho = "Familia de Hippos">
+          <Hippo
+            tamanho="3"
+          />
+          <Hippo
+            tamanho="2"
+            espelhamento="flip-horizontal"
+          />
+          <Hippo
+            tamanho="1"
+            espelhamento="flip-horizontal"
+          />
+          </Cartao>
         </div>
       </div>
       <div className="row">
         <div className="col-sm-12 col-md-6 col-lg-3">
-          <div className="card">
-            <div className="card-header text-muted">
-              03/09/2025
-            </div>
-            <div className="card-body d-flex">
-              <i className="fa-solid fa-car fa-2x"></i>
-              <div>
-                <p>Carro</p>
-                <p>Porsche Amarelo</p>
-              </div>
-            </div>
-          </div>
+          <Pedido
+            data="11/09/2025"
+            icone="car"
+            titulo="Carro"
+            descricao="Porsche Amarelo" />
         </div>
         <div className="col-sm-12 col-md-6 col-lg-3">
-
+          <Pedido
+            data="11/09/2025"
+            icone="tractor"
+            titulo="Trator"
+            descricao="Trator Amarelo" />
         </div>
         <div className="col-sm-12 col-md-6 col-lg-3">
-
+          <Pedido
+            data="11/09/2025"
+            icone="house"
+            titulo="Casa"
+            descricao="Casa Amarelo" />
         </div>
         <div className="col-sm-12 col-md-6 col-lg-3">
-
+          <Pedido
+            data="11/09/2025"
+            icone="computer"
+            titulo="Computador"
+            descricao="Computador Amarelo" />
         </div>
       </div>
 
