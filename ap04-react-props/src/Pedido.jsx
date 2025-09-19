@@ -1,10 +1,6 @@
 const Pedido = ({ data, icone, titulo, descricao }) => {
-
-    return <div className="card">
-        <div className="card-header text-muted">
-            {data}
-        </div>
-        <div className="card-body d-flex">
+    return <>
+        <div className="d-flex">
             <div className="d-flex align-items-center">
                 <i className={`fa-solid fa-${icone} fa-2x`}></i>
             </div>
@@ -13,6 +9,6 @@ const Pedido = ({ data, icone, titulo, descricao }) => {
                 <p className="text-center">{descricao}</p>
             </div>
         </div>
-    </div>
+    </>
 }
 export default Pedido
